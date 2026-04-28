@@ -1,0 +1,57 @@
+.cat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cat-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+.cat-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.cat-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-family: var(--font-h);
+}
+.cat-name {
+  font-family: var(--font-h);
+  font-size: 15px;
+  font-weight: 700;
+}
+.cat-meta { font-size: 12px; color: var(--muted); }
+.cat-progress { height: 4px; border-radius: 2px; }
+.cat-btn {
+  background: transparent;
+  border: 1px solid;
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.15s;
+  font-family: var(--font-b);
+  margin-top: 4px;
+  cursor: pointer;
+}
+.cat-btn:hover { opacity: 0.8; transform: translateX(2px); }

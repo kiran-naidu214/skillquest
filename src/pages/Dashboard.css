@@ -1,0 +1,157 @@
+.dashboard { display: flex; flex-direction: column; min-height: 100vh; }
+
+.dash-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 28px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+.dash-title { font-family: var(--font-h); font-size: 20px; font-weight: 700; }
+.dash-xp-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold-bg);
+  border: 1px solid rgba(245,200,66,0.2);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gold);
+}
+.xp-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+
+.dash-content {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.welcome-banner h2 {
+  font-family: var(--font-h);
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+.welcome-banner p { font-size: 14px; color: var(--muted); }
+
+.streak-badge {
+  text-align: center;
+  background: var(--gold-bg);
+  border: 1px solid rgba(245,200,66,0.2);
+  border-radius: var(--radius);
+  padding: 16px 22px;
+  flex-shrink: 0;
+}
+.streak-num {
+  font-family: var(--font-h);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--gold);
+}
+.streak-label { font-size: 11px; color: var(--muted); margin-top: 2px; letter-spacing: 0.5px; }
+
+/* Stats Row */
+.stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.stat-card { padding: 18px 16px; }
+.stat-label {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.stat-val { font-family: var(--font-h); font-size: 28px; font-weight: 700; line-height: 1; }
+.stat-sub { font-size: 11.5px; color: var(--muted); margin-top: 5px; }
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.section-header h3 { font-family: var(--font-h); font-size: 15px; font-weight: 700; }
+.section-hint { font-size: 12px; color: var(--muted); }
+
+/* Quick Grid */
+.quick-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.quick-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: var(--text);
+}
+.quick-btn:hover { border-color: var(--gold); background: var(--gold-bg); }
+.quick-icon { font-size: 22px; }
+.quick-label { font-size: 13px; font-weight: 600; font-family: var(--font-h); }
+.quick-desc { font-size: 11px; color: var(--muted); }
+
+/* Two Column */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.categories-grid { display: flex; flex-direction: column; gap: 12px; }
+
+/* Leaderboard preview */
+.lb-list { display: flex; flex-direction: column; gap: 6px; }
+.lb-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: var(--radius-sm);
+}
+.lb-me {
+  background: var(--gold-bg);
+  border: 1px solid rgba(245,200,66,0.15);
+}
+.lb-rank {
+  font-family: var(--font-h);
+  font-weight: 700;
+  font-size: 14px;
+  width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+  color: var(--muted);
+}
+.lb-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-h);
+  flex-shrink: 0;
+}
+.lb-name { flex: 1; font-size: 13px; }
+.lb-xp { font-size: 13px; font-weight: 600; color: var(--gold); font-family: var(--font-h); }
+
+/* Badges */
+.badges-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
